@@ -6,40 +6,30 @@
 # end of the output. You can change this behavior by specifying a 
 # different value for end.
 
+# v2 - simplified for demo purposes.
+
 cars = ['audi', 'bmw', 'subaru', 'toyota']
 
 print(f"The list is: {cars}.")
 
-print("Demonstrate how to print with a different EOL marker(\":\"):")
+print("\nDemonstrate how to print with a different EOL marker(\":\"):")
 for car in cars:
-    print(car == 'bmw',end=':')
-    if car == 'bmw':
-        print(car.upper())
-    else:
-        print(car.title())
+    print(car,end=':')
+    print(car.title())
 
-print("Demonstrate how to print with a different EOL marker(\"tab\"):")
+print("\nDemonstrate how to print with a different EOL marker(\"tab\"):")
 for car in cars:
-    print(car == 'bmw',end='\t')
-    if car == 'bmw':
-        print(car.upper())
-    else:
-        print(car.title())
+    print(car,end='\t')
+    print(car.title())
 
-print("Demonstrate how to print with a different EOL marker(\"</tag>\"):")
+print("\nDemonstrate how to print with a different EOL marker(\"</tag>\"):")
 for car in cars:
-    print(car == 'bmw',end='</tag>')
-    if car == 'bmw':
-        print(car.upper())
-    else:
-        print(car.title())
+    print(car,end='</tag>')
+    print(car.title())
 
-print("Demonstrate how to print without a newline (EOL marker):")
+print("\nDemonstrate how to print without a newline (EOL marker):")
 for car in cars:
-    print(car == 'bmw',end='')
-    if car == 'bmw':
-        print(car.upper())
-    else:
-        print(car.title())
+    print(car,end='')
+    print(car.title())
 
-
+exit
